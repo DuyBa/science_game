@@ -1,0 +1,32 @@
+#0: hero cam kiem #1: phu thuy cam gay #2: nu chien binh #3: phu thuy sach phep
+
+all_size_data= [[162, 162], [250, 250], [64, 44], [231, 90]]
+
+all_scale_data= [4, 3, 4.9, 2.3]
+
+all_offset_data= [[72, 56], [112, 107], [15, 7], [112, 63]]
+
+all_data_step= [[10, 8, 1, 7 ,7, 3, 7], [8, 8, 1, 8, 8, 3, 7], [6, 8, 3, 12 ,10, 4, 10], [6, 8, 2, 8, 8, 4, 7]]
+
+all_hero_address= ["assets/muontam/images/warrior/Sprites/warrior.png", "assets/muontam/images/wizard/Sprites/wizard.png", "assets/Warrior-V1.3/aaa.png", "assets/Wizard Pack/aa.png"]
+
+all_music_data= ["assets/audio/lop13.mp3", "assets/audio/flo.mp3"]
+
+all_bg_img= ["assets/Flat Night 2 BG/Flat Night 2 BG.png", "assets/Background/Demo.png"]
+
+>>> tạo 1 biến hero kiểu list, sau đó nhận dữ liệu từ click chuột, ví dụ bấm vào ô nữ hiến binh
+thì append hết các dữ liệu của data có vị trí nữ chiến binh vào (là vị trí số 2)
+ví dụ: hero.append(all_size_data[2], ..., các all data còn lại cũng như vậy)
+kết quả nhận được cuối cùng:
+
+hero1= [[64, 44], 4.9, [15, 7], [6, 8, 3, 12 ,10, 4, 10], "assets/Warrior-V1.3/aaa.png"]
+
+tương tự như vậy , ta nhận đc thêm dữ liệu của các thành phần còn lại : hero2, nhạc, nền
+
+sau đó bro gọi phương thức khởi tạo 
+
+Fighting(hero1, hero2, nhạc nền)  4 dữ liệu trong thằng khởi tạo này lấy từ dòng "tương tự....."
+
+sau khi khởi tạo các dữ liệu rồi thì gọi hàm đánh nhau ra cho bắt đầu trò chơi (thằng hàm này thì link với thằng start button)
+
+
