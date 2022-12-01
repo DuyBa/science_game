@@ -20,8 +20,7 @@ bg_image = pygame.image.load('images/Background/backgroundTN.jpg').convert_alpha
 picture1 = pygame.image.load('images/Freeze/nuocda.png').convert_alpha()
 picture2 = pygame.image.load('images/Background/hoicham_1.png').convert_alpha()
 picture3 = pygame.image.load('images/Background/hoicham_2.png').convert_alpha()
-tuinamdoc_image = pygame.image.load('images/Bag/tui_nam_doc_img.png').convert_alpha()
-tuinamthuong_image = pygame.image.load('images/Bag/tui_nam_thuong_img.png').convert_alpha()
+
 
 
 #load button imgs
@@ -33,12 +32,12 @@ close_img = pygame.image.load("images/Icon/close_btn.png")
 next_img = pygame.image.load("images/Icon/next_btn.png")
 correct_img = pygame.image.load("images/Message/correct.png")
 about_img = pygame.image.load('images/Icon/about.png')
-namdoc1_img = pygame.image.load("images/Bag/namdoc1.png")
-namdoc2_img = pygame.image.load("images/Bag/namdoc2.png")
-namthuong1_img = pygame.image.load("images/Bag/namthuong1.png")
-namthuong2_img = pygame.image.load("images/Bag/namthuong2.png")
-
-
+sodo_img = pygame.image.load('images/Sodo/Sodoo.png')
+gr_father_img = pygame.image.load('images/Sodo/GrFather.png')
+gr_mother_img = pygame.image.load('images/Sodo/GrMother.png')
+father_img = pygame.image.load('images/Sodo/Father.png')
+mother_img = pygame.image.load('images/Sodo/Mother_cut.png')
+child_img = pygame.image.load('images/Sodo/child_cut.png')
 
 
 
@@ -52,16 +51,13 @@ about_btn = button.Button(10, 545,about_img,1)
 
 pic1 = button.Button(180, 140, picture1, 0.8)
 #pic2 = button.Button(-80, 220, picture2, 0.4)
-pic3 = button.Button(-30, 350, picture3, 0.4)
-tuinamdoc_btn = button.Button(10,155,tuinamdoc_image,0.5)
-tuinamthuong_btn = button.Button(300,155,tuinamthuong_image,0.5)
-namdoc1_btn = button.Button(600, 150, namdoc1_img, 0.15)
-namdoc2_btn = button.Button(800, 140, namdoc2_img, 0.7)
-namthuong1_btn = button.Button(600, 350, namthuong1_img, 0.15)
-namthuong2_btn = button.Button(800, 320, namthuong2_img, 0.25)
-correct_btn =button.Button(-10, 200, correct_img, 0.5)
 
-
+Sodo_btn = button.Button(80,140,sodo_img,0.8)
+gr_father_btn = button.Button(540,100,gr_father_img, 0.45)
+gr_mother_btn = button.Button(800,150,gr_mother_img, 0.45)
+mother_btn = button.Button(90, 250, mother_img, 0.35)
+father_btn = button.Button(750, 330, father_img, 0.40)
+child_btn = button.Button(600, 400, child_img, 0.3)
 
 
 
@@ -90,7 +86,7 @@ while run:
     # draw_text('BRAIN OUT', font, (255,50,50), screen, 380, 120)
     # if start_button.draw(screen):
     #     pass
-    draw_text('Distinguish poisonous and common mushrooms', font2, (255,255,255), screen, 100, 100)
+    draw_text('COMPLETE THE FAMILY MAP', font2, (255,255,255), screen, 100, 100)
     # draw button 
     home_btn.draw(screen)
     setting_btn.draw(screen)
@@ -99,16 +95,12 @@ while run:
     close_btn.draw(screen)
     about_btn.draw(screen)
     
-    tuinamdoc_btn.draw(screen)
-    tuinamthuong_btn.draw(screen)
-    namdoc1_btn.draw(screen)
-    namdoc2_btn.draw(screen)
-    namthuong1_btn.draw(screen)
-    namthuong2_btn.draw(screen)
-    
-    
-    
-    
+    Sodo_btn.draw(screen)
+    gr_father_btn.draw(screen)
+    gr_mother_btn.draw(screen)
+    mother_btn.draw(screen)
+    father_btn.draw(screen)
+    child_btn.draw(screen)
     # draw picture
     
     
